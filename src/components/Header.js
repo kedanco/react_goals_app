@@ -11,9 +11,9 @@ class Header extends React.Component {
 					</h4>
 				</div>
 				<nav class="navigation">
-					<button> Your Goals </button>
-					<button> Explore </button>
-					<button> About </button>
+					<button onClick={() => this.props.changePage(1)}> Your Goals </button>
+					<button onClick={() => this.props.changePage(2)}> Explore </button>
+					<button onClick={() => this.props.changePage(3)}> About </button>
 				</nav>
 			</div>
 		);
