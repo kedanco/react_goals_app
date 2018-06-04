@@ -1,28 +1,85 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	text-align: center;
+	min-height: 100vh;
+	margin: 0; /* Important! */
+	font-family: sans-serif;
+	background: linear-gradient(
+			45deg,
+			hsla(340, 100%, 55%, 1) 0%,
+			hsla(340, 100%, 55%, 0) 70%
+		),
+		linear-gradient(
+			135deg,
+			hsla(225, 95%, 50%, 1) 10%,
+			hsla(225, 95%, 50%, 0) 80%
+		),
+		linear-gradient(
+			225deg,
+			hsla(140, 90%, 50%, 1) 10%,
+			hsla(140, 90%, 50%, 0) 80%
+		),
+		linear-gradient(
+			315deg,
+			hsla(35, 95%, 55%, 1) 100%,
+			hsla(35, 95%, 55%, 0) 70%
+		);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+	margin-top: 100px;
+	color: #111;
 }
 
 .App-title {
-  font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+	font-size: 22px;
+	font-weight: 800;
+	letter-spacing: 5px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+nav {
+	margin-top: 50px;
+	margin-bottom: 80px;
 }
+
+.navigation > button {
+	padding: 10px 25px;
+	margin: 5px 30px;
+	font-size: 18px;
+	border-radius: 4px;
+	box-shadow: 1px 3px 0px 1px #000;
+}
+
+.navigation > button:hover {
+	background-color: #999;
+	color: #222;
+	cursor: pointer;
+}
+
+.content {
+	justify-content: center;
+	margin: 15px 200px;
+	align-content: center;
+}
+
+/* @keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+} */
